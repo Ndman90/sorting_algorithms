@@ -14,6 +14,15 @@ void swapper(int *a, int *b)
 	 *a = *b;
 }
 
+/**
+ * shell_sort - A function that sorts an array of integers in
+ * ascending order using the shell sort algorithm,
+ * using the Knuth sequence.
+ *
+ * @array: Array of integers
+ * @size: Size of array
+ * Return: no return
+ */
 void shell_sort(int *array, size_t size)
 {
 	int gap = 1, i, j, tmp;
