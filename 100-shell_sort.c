@@ -6,12 +6,12 @@
  * Return: Nothing
  */
 void swapper(int *a, int *b)
-{ 
-         int tmp;
-
-	 tmp = *a;
-	 *b = tmp;
-	 *a = *b;
+{
+	int tmp;
+	
+	tmp = *a;
+	*b = tmp;
+	*a = *b;
 }
 
 /**
