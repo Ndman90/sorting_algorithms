@@ -31,6 +31,9 @@ void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
 void max_heapify(int *array, size_t size, size_t base, size_t root);
 int get_max(int *array, int size);
 void radix_counting_sort(int *array, size_t size, int sig, int *buff);
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
+		char flow);
+void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
 /* Quick sort pivot function */
 size_t splitt(int array[], size_t size);
 
@@ -45,5 +48,5 @@ void cocktail_sort_list(listint_t **list);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
-
+void bitonic_sort(int *array, size_t size);
 #endif /* SORT_H */
