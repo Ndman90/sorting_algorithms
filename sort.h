@@ -25,7 +25,8 @@ void swapper(int *a, int *b);
 void print_sort(int array[], size_t size, int init);
 int max_value(int *array, int size);
 void switch_nodes(listint_t **head, listint_t *node1, listint_t *node2);
-
+void merge_subarr(int *subarr, int *buff, size_t front, size_t mid, size_t back);
+void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
 /* Quick sort pivot function */
 size_t splitt(int array[], size_t size);
 
@@ -37,5 +38,6 @@ void shell_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void counting_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
+void merge_sort(int *array, size_t size);
 
 #endif /* SORT_H */
