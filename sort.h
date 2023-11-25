@@ -28,6 +28,7 @@ void switch_nodes(listint_t **head, listint_t *node1, listint_t *node2);
 void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
 		size_t back);
 void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
+void max_heapify(int *array, size_t size, size_t base, size_t root);
 /* Quick sort pivot function */
 size_t splitt(int array[], size_t size);
 
@@ -40,5 +41,6 @@ void quick_sort(int *array, size_t size);
 void counting_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void merge_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
 
 #endif /* SORT_H */
