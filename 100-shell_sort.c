@@ -8,7 +8,7 @@
 void swapper(int *a, int *b)
 {
 	int tmp;
-	
+
 	tmp = *a;
 	*b = tmp;
 	*a = *b;
@@ -26,15 +26,15 @@ void swapper(int *a, int *b)
 void shell_sort(int *array, size_t size)
 {
 	int gap = 1, i, j, tmp;
-	
+
 	if (!array || size < 2)
 		return;
-	
+
 	while (gap <= (int)size / 3)
 	{
 		gap = gap * 3 + 1;
 	}
-	
+
 	while (gap > 0)
 	{
 		for (i = gap; i < (int)size; i++)
@@ -46,7 +46,7 @@ void shell_sort(int *array, size_t size)
 			}
 			array[j] = tmp;
 		}
-		
+
 		print_array(array, size);
 		gap = (gap - 1) / 3;
 	}
